@@ -1,4 +1,4 @@
-player,pos,age,team,game,fg,3p,2p,reb,ast,pts,year,2020contract,2020predict,differential
+player,pos,age,team,game,fg,threep,twop,reb,ast,pts,year,contract2020,predict2020,differential
 Andre Drummond,C,26,CLE,57,0.533,0.143,0.551,15.2,2.7,17.7,2019,"$28,751,775 ","$17,922,500 ","$10,829,275 "
 Anthony Davis,C,26,LAL,62,0.436,0.335,0.541,9.3,3.2,26.1,2019,"$32,742,000 ","$26,750,000 ","$5,992,000 "
 Karl-Anthony Towns,C,24,MIN,35,0.412,0.222,0.473,10.8,4.4,26.5,2019,"$29,467,800 ","$17,922,500 ","$11,545,300 "
