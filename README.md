@@ -1,68 +1,43 @@
-![](https://cdn.nba.net/nba-drupal-prod/2020-04/Video_T1_Hero_TopVideo.jpg)
+Animated Bubble Chart
+Creating Animated Bubble Charts using D3 version 4!
 
+Description
+This repository contains code to create your own animated bubble chart using D3v4.
 
-# **Project3 Proposal**
+D3 version 4 has some significant API changes - especially to the force layout, which is used in this bubble chart, so this is great news for any bubble lovers who also want to use the latest and greatest D3.
 
+If you are still using D3v3, but also like bubbles, check out my previous bubble chart tutorial
 
+An associated blog post for lessons learned in switching to v4 is in the works.
 
-## **Title**: DunkinOnData
+A live version of this code is here:
 
+http://vallandingham.me/bubble_chart_v4/
 
-### ** Project Brief **
+Running
+D3 needs to be run from a web server due to how it imports data files.
 
-        1. Topic : Model prediction of players Salary Vs actual paid salary
-        2. Dataset Used : https://github.com/swar/nba_api
-        3. Inspired by: Potential back-up careers in Basket Ball Industries 
-        4. GitHub : https://github.com/Denbigh97/DunkinOnData
-        5. Heroku: 
+See more here: https://github.com/mbostock/d3/wiki#using
 
+So, to run this visualization locally, from the Terminal, navigate to the directory you checked it out to
 
+cd ~/code/path/to/bubble_chart_v4
+Then start a webserver locally. If you are on a Linux or Mac, you should be able to use python's built in webserver:
 
+python -m SimpleHTTPServer 3000
+Alternatively, I have switched to using node's http-server for local hosting.
 
-       
+Ensure you have the node package installed:
 
-### ** Team Members and their roles and responsibilities **
- 
-        * Project Manager - Jugal Kapadia
-        * Lead Developer -  Bruce Muckerson Jr
-        * Frontend Developer - Carlos Pires
-        * Backend Developer - Jayeeta Dasmunshi
-        * Data Engineer - Brad Lampton
+npm install -g http-server
+And then run it in the root directory of the repository.
 
-        
+http-server
+Caveats
+Bubbles might not be the answer to your problems
 
-###  ** Languages and Technologies  **
+While the bubbles are flashy and are fun to watch move around, they may not be the best visual form to display your information in. In most cases, when bubbles are used to encode a single variable, the two dimensional bubble inflates and obscures the one dimensional value it is attempting to display.
 
-        1. Heroku
-        2. Python Pandas
-        3. HTML/CSS/Bootstrap
-        4. JavaScript D3.js
-        5. SQL Database
-        6. Tableau
-        7. Excel
-        8. MACHINE LEARNING:
-        9. Google Cloud SQL
-        10.Scikit-Learn
+Kaiser Fung hates bubble charts. You can see lots of reasons why here: http://junkcharts.typepad.com/junk_charts/bubble_chart/
 
-
-
-### ** Visualizations **
-
-        1. Dashboard #. Bar Graph of Under paid players according to model prediction  
-                     #. D3 visualization of top 5 highest paid Players Vs line graph of their individual game data 
-                     #. Players age Vs salary
-                     #. Yearly highest paid top 5 players 
-
-    2. Team Profiles #  Links to GitHub & LinkedIn profiles of each team member
-    3. Tableau visualization # bar chart of the top 10 players based on FG% or to 10 players based on highest no of games played.
-    4. Machine Learning  # Machine Learning with test results (Model predicted salary Vs Actual )
-    5. Data table # Raw data tables containing: 25 Players and their performance data and Salary
-    6. Project Summary": Write up of project summary
-        
-
-
-
-
-# ** Timeline **
-
-    - 01/26/2021
+Just keep in mind when you are working with your data: Bubbles aren't always the answer.
